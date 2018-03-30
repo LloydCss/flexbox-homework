@@ -1,0 +1,37 @@
+h1{
+	text-align: center;
+
+}
+body{
+	background-color: #ffb6c1;
+	}
+.flex-container{
+	display: flex;
+	border: 5px solid lightcoral;
+	padding: 0px;
+	flex-direction: column;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 500px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  transition: width 2s;
+  animation-name: item;
+    animation-duration: 4s;
+     animation-iteration-count: 3000;
+}
+.item:hover{
+width: 300px;
+
+}
+@keyframes item{
+ 0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
